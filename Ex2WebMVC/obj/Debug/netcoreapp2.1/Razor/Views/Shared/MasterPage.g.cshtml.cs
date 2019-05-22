@@ -43,7 +43,7 @@ namespace AspNetCore
             WriteLiteral("\r\n<!DOCTYPE html>\r\n<html lang=\"pt-br\">\r\n");
             EndContext();
             BeginContext(40, 264, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4dfb52020036470c8ffe5555c8027700", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad83addbdba24578a461fbe343eff993", async() => {
                 BeginContext(46, 176, true);
                 WriteLiteral("\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n    <title>");
                 EndContext();
@@ -73,7 +73,7 @@ namespace AspNetCore
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(306, 220, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7e8acfdee81f419c9d3dc4af24f0dd28", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c943c7ba2ee4e64a409cc1e0fb71596", async() => {
                 BeginContext(312, 192, true);
                 WriteLiteral("\r\n    <nav>\r\n        <ul>\r\n            <li><a href=\"/Usuario/Index\">Cadastrar</a></li>\r\n            <li><a href=\"/Usuario/Listar\">Lista de Cadastrados</a></li>\r\n        </ul>\r\n    </nav>\r\n    ");
                 EndContext();

@@ -23,3 +23,4 @@ C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\Ex2WebMVC\obj\Debug\n
 C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\Ex2WebMVC\obj\Debug\netcoreapp2.1\Ex2WebMVC.csproj.CopyComplete
 C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\Ex2WebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Listar.g.cshtml.cs
 C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\Ex2WebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Shared\MasterPage.g.cshtml.cs
+C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\Ex2WebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Editar.g.cshtml.cs

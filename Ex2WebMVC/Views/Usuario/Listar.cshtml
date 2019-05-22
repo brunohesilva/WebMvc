@@ -4,6 +4,7 @@
     Layout = "MasterPage";
     ViewBag.Title = "Lista de Usuarios";
 } 
+<h2>@TempData["Mensagem"]</h2>
 <table>
     <thead>
         <tr>
@@ -12,6 +13,7 @@
             <th>Email</th>
             <th>Senha</th>
             <th>Data de Nascimento</th>
+            <th>Ações</th>
         </tr>
     </thead>
     <tbody>
@@ -23,6 +25,10 @@
             <td>@item.Email</td>
             <td>@item.Senha</td>
             <td>@item.DataNascimento.ToShortDateString()</td>
+            <td>
+                <a href="/Usuario/Editar?id=@item.Id">Editar</a>
+                <a href="/Usuario/Excluir?id=@item.Id">Excluir</a>
+            </td>
         </tr>
     }
     </tbody>
