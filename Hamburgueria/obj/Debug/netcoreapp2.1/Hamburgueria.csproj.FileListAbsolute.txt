@@ -27,6 +27,6 @@ C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\Hamburgueria\obj\Debu
 C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\Hamburgueria\obj\Debug\netcoreapp2.1\Hamburgueria.dll
 C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\Hamburgueria\obj\Debug\netcoreapp2.1\Hamburgueria.pdb
 C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\Hamburgueria\obj\Debug\netcoreapp2.1\Hamburgueria.csproj.CopyComplete
-C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\Hamburgueria\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LogoArea.g.cshtml.cs
 C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\Hamburgueria\obj\Debug\netcoreapp2.1\Razor\Views\Pedido\Index.g.cshtml.cs
 C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\Hamburgueria\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Sucesso.g.cshtml.cs
+C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\Hamburgueria\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_HeaderNavBar.g.cshtml.cs
