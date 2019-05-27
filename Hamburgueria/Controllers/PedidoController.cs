@@ -1,6 +1,8 @@
 using System;
 using Hamburgueria.Models;
 using Hamburgueria.Repositorio;
+using Hamburgueria.Repositorios;
+using Hamburgueria.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,11 +12,20 @@ namespace Hamburgueria.Controllers
     {
 
         PedidoRepositorio pedidoRepositorio = new PedidoRepositorio();
+        HamburguerRepositorio hamburguerRepositorio = new HamburguerRepositorio();
+        ShakeRepositorio shakeRepositorio = new ShakeRepositorio();
 
         [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            var hamburgueres = hamburguerRepositorio.Listar();
+            var shakes = shakeRepositorio.Listar();
+
+            PedidoViewModel pedido =  new PedidoViewModel();
+            pedido.Hamburgueres = hamburgueres;
+            pedido.Shakes = shakes;
+
+            return View(pedido);
         }
 
         [HttpPost]
@@ -39,6 +50,7 @@ namespace Hamburgueria.Controllers
 
             Hamburguer hamburguer = new Hamburguer(
                 Nome: form["hammburguer"]
+            
             );
 
             pedido.Hamburguer = hamburguer;

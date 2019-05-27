@@ -1,15 +1,17 @@
 using Microsoft.Extensions.Primitives;
 
-namespace Hamburgueria.Models
+namespace Hamburgueria.Models 
 {
-    public class Hamburguer
+    public class Hamburguer : Produto
     {
-        public Hamburguer(StringValues Nome)
+        public Hamburguer()
+        {
+
+        }
+        
+        public Hamburguer(string Nome)
         {
             this.Nome = Nome;
-        }
-
-        public string Nome {get;set;}
-
+        }      
     }
 }
