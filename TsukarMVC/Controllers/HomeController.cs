@@ -12,6 +12,7 @@ namespace TsukarMVC.Controllers
     {
         public IActionResult Index()
         {
+            ViewData["NomeView"] = "Home";
             return View();
         }
 
