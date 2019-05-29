@@ -66,5 +66,10 @@ namespace TsukarMVC.Controllers
 
             return View("Sucesso");
         }
+
+        // [HttpGet]
+        // public IActionResult Listar(){
+
+        // }
     }
 }

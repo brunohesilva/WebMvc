@@ -31,5 +31,12 @@ namespace TsukarMVC.Repositorio
             }
         return true;
         }
+
+    //     public List<Cadastro> Listar(){
+    //         List<Cadastro> listaDeUsuarios = new List<Cadastro>();
+
+    //         string[] linhas = File.ReadAllLines("cadastro.csv");
+    //         Cadastro cadastro
+    //     }
     }
 }

@@ -1,10 +1,8 @@
 ﻿@model TsukarMVC.ViewModels.CadastroViewModel
 
-
-
 <main>
         <h2>Cadastra aí, jovem!</h2>
-        <form method="POST" action="Cadastro/Cadastrar">
+        <form method="POST" action="Cadastro">
             <div>
                 <label for="nome">Nome Completo</label>
                 <br />
@@ -12,42 +10,37 @@
             </div>
 
             <div>
-                <label for="endereco">Endereço</label>
+                <label for="modelo">Modelo do carro</label>
                 <br />
-                <input id="endereco" type="text" maxlength="20" minlength="3" name="endereco" />
+                <input id="modelo" type="text" maxlength="20" minlength="3" name="modelo" />
             </div>
 
             <div>
-                <label for="telefone">Telefone para contato</label>
+                <label for="marca">Marca do carro</label> 
                 <br />
-                <input id="telefone" type="text" name="telefone"/>
+                <input id="marca" type="text" name="marca"/>
             </div>
 
             <div>
-                <label for="email">E-mail</label>
+                <label for="plca">Placa</label>
                 <br />
-                <input id="email" type="email" name="email"/>
+                <input id="placa" type="text" name="placa"/>
             </div>
 
             <div class="double-field">
                 <div>
                     <label for="carro">Carro</label>
-                    <select id="carro" name="carro" required>
+                    <select id="carro" name="carro" >
                         <option value="" disabled selected>Selecione</option>
-                        @foreach (var carro in Model.Carros)
-                        {
-                            <option value=@carro.Modelo>@carro.Modelo</option>
-                        }
+                        
+
                     </select>
                 </div>
                 <div>
                     <label for="moto">Moto</label>
                     <select id="moto" name="moto">
                         <option value="" disabled selected>Selecione</option>
-                        @foreach (var moto in Model.Motos)
-                        {
-                            <option value=@moto.Modelo>@moto.Modelo</option>
-                        }
+                        
                     </select>
                 </div>
             </div>

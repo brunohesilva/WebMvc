@@ -5,3 +5,30 @@
     ViewData["Title"] = "Balanço das Atividades";
 }
 
+<h2>@TempData["Mensagem"]</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Id<th>
+            <th>Nome Do Condutor</th>
+            <th>Modelo Do Carro</th>
+            <th>Marca do Carro</th>
+            <th>Placas</th>
+            <th>Data de Entrada</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach(var item in ViewData["cadastros"] as List<Cadastro>)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.cliente.Nome</td>
+            <td>@item.cliente.Telefone</td>
+            <td>@item.Carro</td>
+            <td>@item.Moto</td>
+            <td>@item.DataPedido.ToShortDateString()</td>
+
+        </tr>                    
+    }
+    </tbody>
+</table>
