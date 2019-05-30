@@ -4,16 +4,23 @@ namespace TsukarMVC.Models
 {
     public class Carro
     {
-        private StringValues Nome;
+        private StringValues stringValues;
 
-        public Carro()
-        {
-        }
+        // public Carro(StringValues stringValues)
+        // {
+        //     this.stringValues = stringValues;
+        // }
 
-        public Carro(StringValues Nome)
-        {
-            this.Nome = Nome;
-        }
+        // private StringValues Nome;
+
+        // public Carro()
+        // {
+        // }
+
+        // public Carro(StringValues Nome)
+        // {
+        //     this.Nome = Nome;
+        // }
 
         public string Modelo {get;set;}
         public string Marca {get;set;}

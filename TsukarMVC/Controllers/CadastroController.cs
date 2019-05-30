@@ -1,6 +1,7 @@
 using System;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Primitives;
 using TsukarMVC.Models;
 using TsukarMVC.Repositorio;
 using TsukarMVC.ViewModels;
@@ -12,6 +13,8 @@ namespace TsukarMVC.Controllers
         CadastroRepositorio cadastroRepositorio = new CadastroRepositorio();
         CarroRepositorio carroRepositorio = new CarroRepositorio();
         MotoRepositorio motoRepositorio = new MotoRepositorio();
+
+        public StringValues Modelo { get; private set; }
 
         [HttpGet]
 
@@ -30,7 +33,7 @@ namespace TsukarMVC.Controllers
         [HttpPost]
         public IActionResult Cadastrar(IFormCollection form)
         {
-            System.Console.WriteLine(form["nome"]);
+            System.Console.WriteLine(form["modelo"]);
             System.Console.WriteLine(form["endereco"]);
             System.Console.WriteLine(form["telefone"]);
             System.Console.WriteLine(form["email"]);
@@ -40,20 +43,20 @@ namespace TsukarMVC.Controllers
             Cadastro cadastro = new Cadastro();
 
             Cliente cliente = new Cliente();
-            cliente.Nome = form["nome"];
+            cliente.Nome = form["modelo"];
             cliente.Endereco = form["endereco"];
             cliente.Telefone = form["telefone"];
             cliente.Email = form["email"];
 
             Carro carro = new Carro(
-                Nome: form["carro"]
+                Modelo = form["carro"]
             );
             cadastro.cliente = cliente;
 
             cadastro.Carro = carro;
 
             Moto moto = new Moto() {
-                Nome = form["moto"]
+                Modelo = form["moto"]
             };
 
             cadastro.Moto = moto;
@@ -64,7 +67,7 @@ namespace TsukarMVC.Controllers
 
             ViewData["Controller"] = "Cadastro";
 
-            return View("Sucesso");
+            return View("Abou");
         }
 
         // [HttpGet]

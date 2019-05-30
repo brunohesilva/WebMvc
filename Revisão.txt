@@ -1,0 +1,7 @@
+1- Por onde começo(View, Controller, etc...)?
+2- Console X Web
+3- ViewBag X ViewData X ViewModel
+4- Model e ViewModel, pra que?
+5- Porque separar layout e index?
+6- Como é a ligação emtre View e o Backend
+7- Porque o fluxo de dados é assim?

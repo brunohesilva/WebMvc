@@ -32,7 +32,10 @@
                     <label for="carro">Carro</label>
                     <select id="carro" name="carro" >
                         <option value="" disabled selected>Selecione</option>
-                        
+                        @foreach (var carros in Model.Carros)
+                        {
+                            <option value="@carros.Modelo">@carros.Modelo</option>
+                        }
 
                     </select>
                 </div>
@@ -40,7 +43,10 @@
                     <label for="moto">Moto</label>
                     <select id="moto" name="moto">
                         <option value="" disabled selected>Selecione</option>
-                        
+                        @foreach (var motos in Model.Motos)
+                        {
+                            <option value="@motos.Modelo">@motos.Modelo</option>
+                        }
                     </select>
                 </div>
             </div>
