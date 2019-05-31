@@ -1,44 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TsukarMVC.Models;
+using TsukarMVC.Repositorio;
+using TsukarMVC.ViewModels;
 
 namespace TsukarMVC.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
-        {
-            ViewData["NomeView"] = "Home";
-            return View();
+        MarcaRepositorio marcaRepositorio = new MarcaRepositorio();
+        ModeloRepositorio modeloRepositorio = new ModeloRepositorio();
+        RegistroRepositorio registroRepositorio = new RegistroRepositorio();
+        [HttpGet]
+        public IActionResult Index(){
+
+            HomeViewModel homeViewModel = new HomeViewModel();
+
+            homeViewModel.Marcas = marcaRepositorio.Listar();
+            homeViewModel.Modelos = modeloRepositorio.Listar();
+
+            return View(homeViewModel);
         }
+        [HttpPost]
+        public IActionResult RegistrarEntrada(IFormCollection form){
+            
+            var modelo = new ModeloModel();
+            modelo.Nome = form["modelo"];
+            var marca = new MarcaModel();
+            marca.Nome = form["marca"];
 
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
+            RegistroModel registro = new RegistroModel();
+            registro.Nome = form["nome"];
+            registro.Modelo = modelo;
+            registro.Marca = marca;
+            registro.Placa = form ["placa"];
 
-            return View();
-        }
+            registroRepositorio.InserirNoCSV(registro);
 
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+           return RedirectToAction("Index"); 
         }
     }
-}
+}                           
