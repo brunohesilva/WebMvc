@@ -22,3 +22,5 @@ C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\TsukarMVC\bin\Debug\n
 C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\TsukarMVC\bin\Debug\netcoreapp2.1\TsukarMVC.Views.pdb
 C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\TsukarMVC\obj\Debug\netcoreapp2.1\TsukarMVC.Views.pdb
 C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\TsukarMVC\obj\Debug\netcoreapp2.1\TsukarMVC.csproj.CopyComplete
+C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\TsukarMVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\ListarRegistros.g.cshtml.cs
+C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\TsukarMVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\FiltrarRegistros.g.cshtml.cs
