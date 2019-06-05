@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ponto Digital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    @if (!"Home".Equals((string) ViewData["NomeView"])) {
+        <link href="~/css/style-login-flex.css" rel="stylesheet" type="text/css">
+    }
+</head>
+<body>
+    @RenderBody()
+    <footer id="rodape">
+        <address>
+            Avenida Paulista, 784 Bairro Jardins - São Paulo-SP
+            <br />
+            <a href="#">Voltar ao Topo</a> 
+        </address>
+    </footer>
+</body>  
