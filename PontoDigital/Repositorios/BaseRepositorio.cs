@@ -20,7 +20,6 @@ namespace PontoDigital.Repositorios
                 valor = linha.Substring(indiceChave);
             }
             
-            
             System.Console.WriteLine($"Campo[{nomeCampo}] e valor {valor}");
             return valor.Replace(nomeCampo + "=", "");
         }

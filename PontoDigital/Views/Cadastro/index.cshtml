@@ -1,34 +1,22 @@
 @{
     ViewData["Title"] = "Cadastro - PontoDigital";
-    ViewData["H2"] = "Cadastro";
-}
 
+}
 
 <header>
     @{
         Html.RenderPartial("_HeaderNavBar");
     }
-</header>
+</header> 
 
-<main>
-        <h2>Cadastro</h2>
+<main id="cada">
+    <div id="cadastro">
+
         <form method="POST" action='@Url.Action("Cadastrar", "Cadastro")'>
             <div>
                 <label for="nome">Nome Completo</label>
                 <br />
                 <input id="nome" type="text" maxlength="20" minlength="3" name="nome" />
-            </div>
-
-            <div>
-                <label for="endereco">Endereço</label>
-                <br />
-                <input id="endereco" type="text" maxlength="20" minlength="3" name="endereco" />
-            </div>
-
-            <div>
-                <label for="telefone">Telefone para contato</label>
-                <br />
-                <input id="telefone" type="text" name="telefone"/>
             </div>
 
             <div>
@@ -55,7 +43,16 @@
                 <input id="data-nascimento" type="date" name="data-nascimento"/>
             </div>
 
+            <div class="double-field">
+                <div>
+                    <label for="usuario">
+
+                    </label>
+                </div>
+            </div>
+
             <input type="submit" value="Cadastrar" />
         </form>
+    </div>
 
     </main>
