@@ -1,5 +1,6 @@
 @{
     ViewData["Title"] = "Cadastro - PontoDigital";
+    ViewData["Title"] = "Depoimentos - PontoDigital";
 }
     <header>
         @{
@@ -8,7 +9,7 @@
     </header>
 
     <main >
-    <div id="login">
+    <div class="login">
 
         <form method="POST" action='@Url.Action("Login", "Cliente")'>
             <div>
@@ -24,6 +25,10 @@
             </div>
             
             <input type="submit" value="Acessar minha conta" />
+            
+            <div class="depoimentos">
+                <a href='@Url.Action("Index", "Depoimentos")'>Deixe seu Depoimento</a>
+            </div>
 
             <div id="link-cadastro">
                 <a href='@Url.Action("Index", "Cadastro")'>Quero me cadastrar</a>

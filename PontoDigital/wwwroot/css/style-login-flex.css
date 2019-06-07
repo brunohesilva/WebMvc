@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box; 
     font-family: 'ZCOOL QingKe HuangYou', cursive;
+    
 }
 
 #login {
@@ -61,3 +62,7 @@ nav a:hover{
     width: 100%;
 }
 
+main {
+    background-color: #7728ba;
+    height: 100%;
+}

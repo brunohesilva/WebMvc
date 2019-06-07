@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Depoimentos - PontoDigital";
+
+}
+
+<header>
+    @{
+        Html.RenderPartial("_HeaderNavBar");
+    }
+</header> 
+
+<h2>Depoimentos</h2>
+
+<form>
+
+
+<div>
+    <label for="nome">Nome Completo</label>
+    <br />
+    <input id="nome" type="text" maxlength="20" minlength="3" name="nome" value="@Model.Cliente.Nome"/>
+</div>
+
+<div>
+    <label for="comentario">Deixe seu Depoimento aqui</label>
+    <br />
+    <textarea name="comentário" rows="10" cols="40"></textarea>
+</div>
+
+ <input type="submit" value="Comentar" />
+</form>
