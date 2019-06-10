@@ -10,24 +10,24 @@ namespace PontoDigital.Repositorios
         private const string PATH = "Database/Depoimento.csv";
         private const string PATH_INDEX = "Database/Depoimento_Id.csv";
 
-        private List<Depoimentos> Depoimentos =  new List<Depoimentos>();
+        private List<Depoimento> Depoimentos =  new List<Depoimento>();
 
-        public List<Depoimentos> Listar()
+        public List<Depoimento> Listar()
         {
             var registros = File.ReadAllLines(PATH);
             foreach (var item in registros)
             {
                 var valores = item.Split(";");
-                Depoimentos depoimentos = new Depoimentos();
+                Depoimento depoimentos = new Depoimento();
                 depoimentos.NomeDepoimento = valores[1];
-                depoimentos.Depoimento = valores[2];
+                depoimentos.Depoimentos = valores[2];
 
                 this.Depoimentos.Add(depoimentos);                
             }
             return this.Depoimentos;
         }
 
-         public bool Inserir (Depoimentos depoimentos) {
+         public bool Inserir (Depoimento depoimentos) {
             CONT++;
             File.WriteAllText(PATH_INDEX, CONT.ToString());
 
@@ -37,8 +37,8 @@ namespace PontoDigital.Repositorios
             return true;
         }
 
-        private string PrepararRegistroCSV (Depoimentos depoimentos) {
-            return $"id={CONT};nome={depoimentos.NomeDepoimento};depoimento={depoimentos.Depoimento};data_depoimento={depoimentos.DataDepoimento};\n";
+        private string PrepararRegistroCSV (Depoimento depoimentos) {
+            return $"id={CONT};nome={depoimentos.NomeDepoimento};depoimento={depoimentos.Depoimentos};data_depoimento={depoimentos.DataDepoimento};\n";
         }
     }
 }

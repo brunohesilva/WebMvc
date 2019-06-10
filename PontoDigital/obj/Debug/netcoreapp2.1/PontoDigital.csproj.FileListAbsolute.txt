@@ -32,4 +32,4 @@ C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\PontoDigital\obj\Debu
 C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\PontoDigital\obj\Debug\netcoreapp2.1\PontoDigital.pdb
 C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\PontoDigital\obj\Debug\netcoreapp2.1\PontoDigital.csproj.CopyComplete
 C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Cliente\Login.g.cshtml.cs
-C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Depoimentos\index.g.cshtml.cs
+C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Depoimento\Index.g.cshtml.cs

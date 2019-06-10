@@ -28,7 +28,7 @@ nav > ul {
     height: 2.5em;
     align-items: center;
     width: 1300px;
-    margin-left: 425px;
+    margin-left: 350px;
     border-radius: 100px;
     margin-top: 50px;
     position: absolute;
@@ -49,20 +49,41 @@ nav a:hover{
 
 #cadastro {
     align-items: center;
-    margin-top: 300px;
+    margin-top: 250px;
     position: absolute;
     text-align: center;
     display: flex;
+    color: black;
+    justify-content: space-between;
+    margin-left: -400px;
+    width: 100%;
     
 }
 
 #rodape{
     position: absolute;
-    margin-top: 849px;
+    background-color:  #005eb9; 
+
     width: 100%;
+    height: 120px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+#rodape address{
+    margin-top: 5px;
+    align-content: center;
 }
 
 main {
-    background-color: #7728ba;
-    height: 100%;
+    background-color: tomato;
+    height: 849px;
+    width: 100%;
+}
+
+#sucesso h2{
+    margin-top: 450px;
+    position: absolute;
+    margin-left: 830px;
 }

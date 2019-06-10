@@ -2,10 +2,10 @@ using System;
 
 namespace PontoDigital.Models
 {
-    public class Depoimentos
+    public class Depoimento
     {
         public string NomeDepoimento {get;set;}
-        public string Depoimento {get;set;}
+        public string Depoimentos {get;set;}
         public DateTime DataDepoimento {get;set;}
     }
 }

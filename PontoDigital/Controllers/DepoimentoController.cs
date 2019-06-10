@@ -6,20 +6,20 @@ using PontoDigital.Repositorios;
 
 namespace PontoDigital.Controllers
 {
-    public class DepoimentoController
+    public class DepoimentoController : Controller
     {
         private DepoimentoRepositorio depoimentoRepositorio = new DepoimentoRepositorio();
-        // public IActionResult Comentar(IFormCollection form)
-        // {
-        //     Depoimentos depoimento = new Depoimentos();
-        //     depoimento.NomeDepoimento = form["nome"];
-        //     depoimento.Depoimento = form["depoimento"];
-        //     depoimento.DataDepoimento = DateTime.Now;
+        public IActionResult Comentar(IFormCollection form)
+        {
+            Depoimento depoimento = new Depoimento();
+            depoimento.NomeDepoimento = form["nome"];
+            depoimento.Depoimentos = form["depoimento"];
+            depoimento.DataDepoimento = DateTime.Now;
 
-        //     depoimentoRepositorio.Inserir(depoimento);
-        //     ViewData["Action"] = "Depoimento";
-        //     return View();
+            depoimentoRepositorio.Inserir(depoimento);
+            ViewData["Action"] = "Comentario";
+            return View("Sucsso");
 
-        // }
+        }
     }
 }

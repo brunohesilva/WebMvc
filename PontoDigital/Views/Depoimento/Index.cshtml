@@ -1,6 +1,5 @@
 @{
-    ViewData["Title"] = "Depoimentos - PontoDigital";
-
+    ViewData["Title"] = "Depoimento - PontoDigital";
 }
 
 <header>
@@ -9,9 +8,9 @@
     }
 </header> 
 
-<h2>Depoimentos</h2>
+<h2>Depoimento</h2>
 
-<form>
+<form method="POST" action='@Url.Action("Comentar", "Depoimento")'>
 
 
 <div>
@@ -21,9 +20,9 @@
 </div>
 
 <div>
-    <label for="comentario">Deixe seu Depoimento aqui</label>
+    <label for="depoimento">Deixe seu Depoimento aqui</label>
     <br />
-    <textarea name="comentário" rows="10" cols="40"></textarea>
+    <textarea name="depoimento" rows="10" cols="40"></textarea>
 </div>
 
  <input type="submit" value="Comentar" />
