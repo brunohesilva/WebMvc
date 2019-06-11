@@ -1,29 +1,32 @@
-@{
-    ViewData["Title"] = "Depoimento - PontoDigital";
-}
-
-<header>
     @{
-        Html.RenderPartial("_HeaderNavBar");
+        ViewData["Title"] = "Depoimento - PontoDigital";
     }
-</header> 
 
-<h2>Depoimento</h2>
+    <header>
+        @{
+            Html.RenderPartial("_HeaderNavBar");
+        }
+    </header> 
 
-<form method="POST" action='@Url.Action("Comentar", "Depoimento")'>
+    <main id="depoimento">
 
+    <form method="POST" action='@Url.Action("Comentar", "Depoimento")'>
+    <div>
+        <br />
+        <input id="nome" type="text" maxlength="20" minlength="3" name="nome" placeholder="Nome"/>
+        <br />
+    </div>
 
-<div>
-    <label for="nome">Nome Completo</label>
+    <div>
+        <br />
+        <label for="depoimento">Deixe seu Depoimento aqui</label>
+        <br />
+        <textarea name="depoimento" rows="10" cols="40"></textarea>
+        <br />
+    </div>
     <br />
-    <input id="nome" type="text" maxlength="20" minlength="3" name="nome" value="@Model.Cliente.Nome"/>
-</div>
-
-<div>
-    <label for="depoimento">Deixe seu Depoimento aqui</label>
+    <input type="submit" value="Comentar" />
     <br />
-    <textarea name="depoimento" rows="10" cols="40"></textarea>
-</div>
+    </form>
 
- <input type="submit" value="Comentar" />
-</form>
+    </main>

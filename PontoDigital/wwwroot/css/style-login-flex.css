@@ -87,3 +87,29 @@ main {
     position: absolute;
     margin-left: 830px;
 }
+
+.login {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 700px;
+    text-align: center;
+}
+
+.login input{
+    width: 500px;
+    height: 35px;
+    text-align: center;
+    font-size: 1em;
+}
+
+#falha h2{
+    margin-top: 500px;
+    position: absolute;
+    margin-left: 830px;
+}
+
+#depoimento form{
+    margin-top: 275px;
+    position: absolute;
+    margin-left: 800px;
+}

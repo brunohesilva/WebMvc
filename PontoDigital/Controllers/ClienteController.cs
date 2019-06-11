@@ -27,9 +27,12 @@ namespace PontoDigital.Controllers
             {
                 HttpContext.Session.SetString(SESSION_EMAIL, usuario);
                 HttpContext.Session.SetString(SESSION_CLIENTE, cliente.Nome);
+                return RedirectToAction("Index", "Depoimento");
+            }else
+            {
+                return View("Falha");
             }
-
-            return RedirectToAction("Index", "Depoimento");
+            
         }
 
         public IActionResult Logout()
