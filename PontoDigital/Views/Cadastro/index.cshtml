@@ -14,33 +14,33 @@
         <form method="POST" action='@Url.Action("Cadastrar", "Cadastro")'>
             <div>
                 <br />
-                <input id="nome" type="text" maxlength="20" minlength="3" name="nome" placeholder="Nome"/>
+                <input id="nome" type="text" maxlength="20" minlength="3" name="nome" placeholder="Nome"  required/>
                  <br />
             </div>
 
             <div>
                 
                 <br />
-                <input id="email" type="email" name="email" placeholder="Email"/>
+                <input id="email" type="email" name="email" placeholder="Email"  required/>
                  <br />
             </div>
 
              <div>
-                <br />
-                <input id="senha" type="password" name="senha" placeholder="Senha"/>
+                <br /> 
+                <input id="senha" type="password" name="senha" placeholder="Senha"  required/>
                  <br />
             </div>
 
             <div>
                 <br />
-                <input id="confirmar-senha" type="password" placeholder="Confirme a Senha"/>
+                <input id="confirmar-senha" type="password" placeholder="Confirme a Senha"  required/>
                 <br />
             </div>
 
             <div>
                 <label for="data-nascimento">Data de Nascimento</label>
                 <br />
-                <input id="data-nascimento" type="date" name="data-nascimento"/>
+                <input id="data-nascimento" type="date" name="data-nascimento"  required/>
 
             </div>
 

@@ -22,6 +22,7 @@ namespace PontoDigital.Controllers
             cliente.Email = form["email"];
             cliente.Senha = form["senha"];
             cliente.DataNascimento = DateTime.Parse(form["data-nascimento"]);
+            cliente.DataCriacao = DateTime.Now;
 
             clienteRepositorio.Inserir(cliente);
             ViewData["Action"] = "Cadastro";

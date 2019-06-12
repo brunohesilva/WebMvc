@@ -33,3 +33,4 @@ C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\PontoDigital\obj\Debu
 C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\PontoDigital\obj\Debug\netcoreapp2.1\PontoDigital.dll
 C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\PontoDigital\obj\Debug\netcoreapp2.1\PontoDigital.pdb
 C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\PontoDigital\obj\Debug\netcoreapp2.1\PontoDigital.csproj.CopyComplete
+C:\Users\38940293827\Documents\SenaiProjetos\WebMVC\WebMvc\PontoDigital\obj\Debug\netcoreapp2.1\Razor\Views\Dashboard\Index.g.cshtml.cs

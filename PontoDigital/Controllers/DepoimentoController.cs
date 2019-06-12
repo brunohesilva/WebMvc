@@ -8,6 +8,7 @@ namespace PontoDigital.Controllers
 {
     public class DepoimentoController : Controller
     {
+        ClienteRepositorio clienteRepositorio = new ClienteRepositorio();
         private DepoimentoRepositorio depoimentoRepositorio = new DepoimentoRepositorio();
         public IActionResult Index()
         {
@@ -25,7 +26,6 @@ namespace PontoDigital.Controllers
 
             ViewData["Action"] = "Depoimento";
             return View("Sucesso");
-
         }
     }
 }

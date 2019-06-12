@@ -10,7 +10,7 @@ namespace PontoDigital.Repositorios
         public static uint CONT = 0;
         private const string PATH = "Database/Cliente.csv";
         private const string PATH_INDEX = "Database/Cliente_Id.csv";
-        private List<Cliente> cliente = new List<Cliente>();
+        private List<Cliente> clientes = new List<Cliente>();
 
         public bool Inserir (Cliente cliente) {
             CONT++;
@@ -59,6 +59,17 @@ namespace PontoDigital.Repositorios
             cliente.DataNascimento = DateTime.Parse(ExtrairCampo("data_nascimento", registro));
 
             return cliente;
+        }
+
+        public List<Cliente> ListarTodos () {
+            var linhas = ObterRegistrosCSV (PATH);
+            foreach (var item in linhas) {
+
+                Cliente cliente = ConverterEmObjeto (item);
+
+                this.clientes.Add (cliente);
+            }
+            return this.clientes;
         }
     }
 }

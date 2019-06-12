@@ -22,11 +22,17 @@ namespace PontoDigital.Controllers
             var senha = form["senha"];
 
             var cliente = clienteRepositorio.ObterPor(usuario);
+
+            if (cliente != null && cliente.Equals("Administrador") && cliente.Equals("dmin@agoravai.com") && cliente.Equals("admin"))
+            {
+                return RedirectToAction    
+            }
             
             if (cliente != null && cliente.Email.Equals(usuario) && cliente.Senha.Equals(senha))
             {
                 HttpContext.Session.SetString(SESSION_EMAIL, usuario);
                 HttpContext.Session.SetString(SESSION_CLIENTE, cliente.Nome);
+            
                 return RedirectToAction("Index", "Depoimento");
             }else
             {

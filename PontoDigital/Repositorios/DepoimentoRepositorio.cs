@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using PontoDigital.Models;
@@ -20,7 +21,7 @@ namespace PontoDigital.Repositorios
                 var valores = item.Split(";");
                 Depoimento depoimentos = new Depoimento();
                 depoimentos.NomeDepoimento = valores[1];
-                depoimentos.Depoimentos = valores[2];
+                depoimentos.Depoimentos = valores[1];
 
                 this.Depoimentos.Add(depoimentos);                
             }
