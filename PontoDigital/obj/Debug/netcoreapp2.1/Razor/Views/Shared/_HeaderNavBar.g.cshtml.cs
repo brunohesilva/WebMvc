@@ -67,7 +67,7 @@ using PontoDigital.Models;
             WriteLiteral("\r\n<nav class=\"menu\">\r\n    <ul>\r\n        <li>");
             EndContext();
             BeginContext(94, 72, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "df7c1c71f3e94cd0920dc281c2e98528", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "06c6c54c01444fe7ba14133b9a64fcbd", async() => {
                 BeginContext(153, 9, true);
                 WriteLiteral("Principal");
                 EndContext();
@@ -145,7 +145,7 @@ WriteAttributeValue("", 419, Url.Action("Index", "Home"), 419, 28, false);
             WriteLiteral("        <li>");
             EndContext();
             BeginContext(534, 79, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5208503c63e44086aad1a38aabcd98dc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ada658d7eaf143cf9bdd94eb3f1159f9", async() => {
                 BeginContext(595, 14, true);
                 WriteLiteral("Login/Cadastro");
                 EndContext();
@@ -178,7 +178,7 @@ WriteAttributeValue("", 419, Url.Action("Index", "Home"), 419, 28, false);
             WriteLiteral("        <li>");
             EndContext();
             BeginContext(650, 73, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b41aba976f74480aab8b657fa87242cf", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a819bea30dc4510b73ba41d2fec4746", async() => {
                 BeginContext(713, 6, true);
                 WriteLiteral("Logout");
                 EndContext();

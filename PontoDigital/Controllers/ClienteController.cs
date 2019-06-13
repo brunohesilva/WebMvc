@@ -16,6 +16,7 @@ namespace PontoDigital.Controllers
             return View();
         }
 
+        [HttpPost]
         public IActionResult Login(IFormCollection form)
         {
             var usuario = form["email"];
@@ -23,9 +24,9 @@ namespace PontoDigital.Controllers
 
             var cliente = clienteRepositorio.ObterPor(usuario);
 
-            if (cliente != null && cliente.Equals("Administrador") && cliente.Equals("dmin@agoravai.com") && cliente.Equals("admin"))
+            if (cliente != null && cliente.Nome.Equals("Administrador") && cliente.Email.Equals("admin@agoravai.com") && cliente.Senha.Equals("admin"))
             {
-                return RedirectToAction    
+                return RedirectToAction("Index", "Admin");  
             }
             
             if (cliente != null && cliente.Email.Equals(usuario) && cliente.Senha.Equals(senha))

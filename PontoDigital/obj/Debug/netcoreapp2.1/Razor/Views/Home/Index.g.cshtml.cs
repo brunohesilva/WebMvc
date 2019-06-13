@@ -129,7 +129,7 @@ using PontoDigital.Models;
             WriteLiteral("stema de Kanban, é també temos o YouFacebook, uma rede social para quem busca empregos ou Facebook profissional.</p>\r\n            </article>\r\n            ");
             EndContext();
             BeginContext(2273, 1089, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f6bceb810f747f68520809aa53d2821", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d730c1520ad47579ee18e0aa9512f69", async() => {
                 BeginContext(2303, 1052, true);
                 WriteLiteral(@"
 

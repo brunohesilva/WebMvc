@@ -1,4 +1,5 @@
 using System.IO;
+using PontoDigital.Models;
 
 namespace PontoDigital.Repositorios
 {
@@ -23,5 +24,7 @@ namespace PontoDigital.Repositorios
             System.Console.WriteLine($"Campo[{nomeCampo}] e valor {valor}");
             return valor.Replace(nomeCampo + "=", "");
         }
+
+        
     }
 }

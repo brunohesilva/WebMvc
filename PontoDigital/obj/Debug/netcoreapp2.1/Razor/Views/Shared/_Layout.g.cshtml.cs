@@ -58,7 +58,7 @@ using PontoDigital.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html lang=\"pt-br\">\r\n");
             EndContext();
             BeginContext(38, 468, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b309f9c8173a483f8440093e57770a43", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbcb12102360407ea1f7c5728b857ca1", async() => {
                 BeginContext(44, 306, true);
                 WriteLiteral(@"
     <meta charset=""UTF-8"">
@@ -77,7 +77,7 @@ using PontoDigital.Models;
                 WriteLiteral("        ");
                 EndContext();
                 BeginContext(417, 73, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "5fbd3b969e2b4bc2ad5ea84e44382ec1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "66a70cd5138f4824ad6dfc7191794d1e", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -117,7 +117,7 @@ using PontoDigital.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(508, 244, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a942676a9d584ed4982b8718a25711cd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c1ec3d88366f4e74a84b10dea8d1e2ff", async() => {
                 BeginContext(514, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();

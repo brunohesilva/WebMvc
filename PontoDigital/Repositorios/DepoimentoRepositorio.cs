@@ -5,7 +5,7 @@ using PontoDigital.Models;
 
 namespace PontoDigital.Repositorios
 {
-    public class DepoimentoRepositorio
+    public class DepoimentoRepositorio : BaseRepositorio
     {
         public static uint CONT = 0;
         private const string PATH = "Database/Depoimento.csv";
@@ -41,5 +41,12 @@ namespace PontoDigital.Repositorios
         private string PrepararRegistroCSV (Depoimento depoimentos) {
             return $"id={CONT};nome={depoimentos.NomeDepoimento};depoimento={depoimentos.Depoimentos};data_depoimento={depoimentos.DataDepoimento};\n";
         }
+
+        // public List<Depoimento> ListarTodos () {
+        //     var linhas = ObterRegistrosCSV (PATH);
+        //     foreach (var item in linhas){
+        //         Depoimento depoimento = ConverterEmOjeto
+        //     }
+        // }
     }
 }

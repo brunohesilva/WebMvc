@@ -71,7 +71,7 @@ using PontoDigital.Models;
             WriteLiteral("</header> \r\n\r\n<main id=\"cada\">\r\n    <div id=\"cadastro\">\r\n\r\n        ");
             EndContext();
             BeginContext(199, 1272, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "286f4f3162404aeab8472882ba37d1d0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e8ad36a9f5141f29cf5691e4cd41c30", async() => {
                 BeginContext(265, 1199, true);
                 WriteLiteral(@"
             <div>
