@@ -48,5 +48,19 @@ namespace PontoDigital.Repositorios
         //         Depoimento depoimento = ConverterEmOjeto
         //     }
         // }
+
+        public void Reprovar(int id){
+            string[] linhas = File.ReadAllLines("Depoimento.csv");
+
+            for (int i = 0; i < linhas.Length; i++)
+            {
+                string[] linha = linhas[i].Split(";");
+                if (id.ToString() == linha[0]){
+                    linhas[i] = "";
+                    break;
+                }
+            }
+            File.WriteAllLines("Depoimento.csv", linhas);
+        }
     }
 }

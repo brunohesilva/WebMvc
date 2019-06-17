@@ -27,5 +27,14 @@ namespace PontoDigital.Controllers
             ViewData["Action"] = "Depoimento";
             return View("Sucesso");
         }
+
+        [HttpGet]
+        public IActionResult Reprovar(int id){
+            DepoimentoRepositorio depoimentoRepositorio = new DepoimentoRepositorio();
+            depoimentoRepositorio.Reprovar(id);
+
+            return RedirectToAction("Admin");
+        }
+
     }
 }
