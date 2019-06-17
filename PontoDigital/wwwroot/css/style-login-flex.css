@@ -113,3 +113,17 @@ main {
     position: absolute;
     margin-left: 800px;
 }
+
+#dashboard{
+    
+}
+
+#dashboard table{
+    position: absolute;
+    margin-left: 45px;
+    margin-top: 200px;
+    color: #fff;
+    font-size: 1.5em;
+    display: flex;
+}
+

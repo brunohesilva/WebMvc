@@ -72,7 +72,7 @@ using PontoDigital.Models;
             WriteLiteral("    </header>\r\n\r\n    <main >\r\n    <div class=\"login\">\r\n\r\n        ");
             EndContext();
             BeginContext(283, 849, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ade3d4fd35d46e39ffeb9e2f49cda04", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "955f8bb4f51d4a489cea9b0e9e7b9bea", async() => {
                 BeginContext(344, 688, true);
                 WriteLiteral(@"
             <div>

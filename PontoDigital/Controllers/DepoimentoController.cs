@@ -26,7 +26,7 @@ namespace PontoDigital.Controllers
 
             ViewData["Action"] = "Depoimento";
             return View("Sucesso");
-        }
+        } 
 
         [HttpGet]
         public IActionResult Reprovar(int id){
@@ -35,6 +35,5 @@ namespace PontoDigital.Controllers
 
             return RedirectToAction("Admin");
         }
-
     }
 }
